@@ -11,8 +11,7 @@ class Program
         for (int i = 1; i < notas; i++)
         {
             Console.Write($"Ingrese el valor de la nota {i}: ");
-            string entrada = Console.ReadLine();
-
+            string? entrada = Console.ReadLine();
             try
             {
                 double nota = double.Parse(entrada);
@@ -40,6 +39,6 @@ class Program
 
         }
         Console.WriteLine("******CALCULO******");
-        Console.WriteLine($"El promedio es: {suma/5}");
+        Console.WriteLine($"El promedio es: {suma / 5}");
     }
 }
